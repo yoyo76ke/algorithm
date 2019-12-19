@@ -44,6 +44,7 @@ class Foo(object):
         
         # printSecond() outputs "second". Do not change or remove this line.
         with self.exec_condition:
+            print(self.first_finish)
             self.exec_condition.wait_for(self.first_finish)
 
             printSecond()
